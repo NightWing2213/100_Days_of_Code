@@ -29,7 +29,8 @@ def main():
                 print("Too high.")
             else:
                 print("Too low.")
-            print("Guess again.")
+            if lives != 0: #only print if lives != 0
+                print("Guess again.")
     if lives == 0: #if out of lives print lose message
         print("You Lose.")
 
